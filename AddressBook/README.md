@@ -1,1 +1,1 @@
-This is the CIS 422 Project 1 repository for TeamB
+This is the repo for Address Book
