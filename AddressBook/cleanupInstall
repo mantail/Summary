@@ -1,0 +1,2 @@
+rm ~/AddressBook/.addressBook
+rmdir ~/AddressBook

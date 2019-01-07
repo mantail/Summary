@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="mystyle.css?v=2">
+<style>
+#shell{
+	width:100%;
+}
+#g_key{
+	background: white;
+}
+#forms{
+	margin:auto;
+	top:50%;
+	right:0;
+	left:0;
+}
+label{
+	float:left;
+	text-align:left;
+	font-size:120%;
+}
+
+input{
+	width: 70%;
+}
+</style>
+<title>Planner Add Group</title>
+</head>
+<body>
+<center>
+<h1>Create a group</h1>
+<div class="container" align="right">
+	<button id="guideButton" onclick="return toUserGuidePage();">User Guide</button>
+    <button id="backButton" onclick="return toMainPage();">Back to main page</button> 
+    <button id="logoutButton" onclick="return logoutUser();">Log Out</butto    n>
+</div>
+<hr>
+</center>
+<br>
+<p>
+Please create a group by inputing the start and end date of the window the meeting can be held at, the length of the meeting, and the number of people to attend, excluding youself. This page will return a key to you, copy this key and send it to all members you wish to partake in the meeting. If you do not know the number of attendees, input -1 to indicate this. All other fields must be filled out to the best of your knowledge.
+</p>
+<p><br>
+<pre id="g_key" text="Key to distribute:"> key to copy will appear here</pre>
+<div type="container">
+	<input id="meeting_name_in" type="text " name="meeting_name" placeholder="Meeting Name"><br>
+	<input id="description_in" type="text " name="description" placeholder="Brief description"><br>
+	<input id="start_d_in" type="text " name="start_d" placeholder="Beginning of scheduling window(mm/dd/yy format)"><br>
+	<input id="end_d_in" type="text " name="end_d" placeholder="End date of scheduling window(mm/dd/yy format)"><br>
+	<input id="len_in" type="text " name="len" placeholder="length of meeting(minutes)"><br>
+	<input id="numAttendees_in" type="text " name="numAttendees" placeholder="Number of attendees(except you)"><br>
+	<br>
+	<button id="create_group_button" onclick="return validateNewGroup();"> Create Group</button>
+</div>
+<br>
+<br>
+<br>
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</p>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+<script src="./javascript/aux/app.js?v=2"></script>
+<script src="./javascript/group/CreateGroup.js?v=4" type="application/javascript"> </script>
+<script src="./javascript/aux/auth/AuthChangedOther.js?v=2"></script>
+<script src="./javascript/user/Logout.js?v=4"></script>
+<script src="./javascript/aux/Redirects.js?v=5" type="application/javascript"> </script>
+</body>
+</html>

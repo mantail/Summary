@@ -1,0 +1,102 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<title>Team Planner Login</title>
+</head>
+<body>
+<script src = "Redirects.js" type="application/javascript"> </script>
+<center>
+<h1>User Guide</h1>
+</center>
+<P>
+<br>
+<H3>NOTE: this project is under development. The forms in both these extensions currently do nothing</H3>
+<H1>
+Opening the program
+</H1>
+<H2>
+1.Make sure you have an internet connection<br>
+2.Visit: https://team-b-great-meeting-scheduler.firebaseapp.com/<br>
+</H2>
+<H1>
+Logging in as a new user
+</H1>
+<H2>
+1.Make sure you have a Google account, with an associated gmail address. If you do not have one, create one at https://accounts.google.com/SignUp?hl=en<br>
+2.Enter your gmail address and password into their respective text inputs, then click the ‘New User’ button. Your information will be appended to the database and you will be redirected to the Main Page.<br>
+⚠️.If an error message appears, ensure your information is correct, that you are connected to the internet, and that there are enough characters in your password. If all of these have been corrected and the error persists, the cause is likely an error on the backend.<br>
+</H2>
+<H1>
+Logging in as an existing user
+</H1>
+<H2>
+1.Make sure you have both a Google account with an associated gmail address, and that it has been previously registered as a New User.<br>
+2.Enter your gmail address and password into their respective text inputs, then click the ‘Login’ button. Your information will be verified and you will be redirected to the Main Page.<br>
+If an error message appears, ensure your information is correct, and that you have previously registered as a New User using said information. If all of these have been corrected and the error persists, the cause is likely an error on the backend.<br>
+</H2>
+<H1>
+Logging out
+</H1>
+<H2>
+1.Make sure you are logged in, and on any page except the Login Page.<br>
+2.Click the ‘Log Out’ button. You will be returned to the Login Page.<br>
+</H2>
+<H1>
+Creating a group
+</H1>
+<H2>
+1.Make sure you are logged in and on the Main Page.<br>
+2.Click the ‘Create Group’ button. You will be redirected to the Group Creation Page.<br>
+3.In the labelled Inputs, type in the Meeting Name, Start Date, End Date, Meeting Length, and the Number of Attendees.<br>
+NOTE: The date format is MM/DD/YYYY.?<br>
+NOTE: The date system uses midnight as time boundaries. Eg, starting at 11/21/9999 and ending at 11/21/9999 selects the full day of 11/21 as the meeting window, 11/21/9999-11/25/9999 selects the entirety of 11/21, 11/22, 11/23, 11/24, and 11/25 as the meeting window.<br>
+NOTE: If you don’t know Number of Attendees in advance, input -1 to create a group of indeterminate size.
+A group of indeterminate size has no way to automatically calculate meeting times, so the user MUST use the method described in ‘Selecting a time without all responses’ to get final results.<br>
+4.Once your desired information is input, click the ‘Create Group’ button. The Group Key will be displayed in the bottom right corner.<br>
+</H2>
+
+<H1>
+Joining a group
+</H1>
+<H2>
+1.Make sure you are logged in, on the Main Page, and have a valid Group Key.<br>
+2.Click on the ‘Join Group’ button. You will be redirected to the Group Joining Page.<br>
+3.Enter your Group Key and click the ‘Submit Key’ button. You will be redirected to the Main Page, where the group associated with the Group Key will be added to your Group List.<br>
+⚠️.If an error message appears or no new groups appear in the Group List, ensure your Group Key is correct. If this has been corrected and the error persists, the cause  is likely an error on the backend.<br>
+</H2>
+<H1>
+Choosing a group
+</H1>
+<H2>
+1.Make sure you are logged in, on the Main Page, and that you have already joined/created a group on this account.<br>
+2.From the Group List, labelled ‘Existing Groups’, select the desired group by clicking it. You will be redirected to the Choice Page.<br>
+</H2>
+<H1>
+Adding a timeslot or timeslots
+</H1>
+<H1>
+Selecting a meeting time
+</H1>
+<H2>
+1.Make sure you are logged in, are on the Choice Page for the desired group, and have received timeslot responses from all members.<br>
+2.From the best possible time(s) displayed, labelled ‘Meeting Times’, select a time by clicking it.<br>
+3.The event will be added to a Group Google Calendar, and an email notification will be sent to each member of the group with the event’s information.<br>
+</H2>
+<H1>
+Selecting a meeting time without all response
+</H1>
+<H2>
+1.Make sure you are logged in and are on the Choice Page for the desired group.<br>
+2.To calculate meeting times without responses from all users, click the ‘Calculate Now’ button. The Choice Page will refresh, now showing the best possible time(s) in ‘Meeting Times’.<br>
+3.From the best possible time(s) displayed, labelled ‘Meeting Times’, select a time by clicking it.<br>
+4.The event will be added to a Group Google Calendar, and an email notification will be sent to each member of the group with the event’s information.<br>
+⚠️.THIS WILL BE THE BEST TIME(S) FOR ONLY THOSE WHO HAVE SUBMITTED RESPONSES. TO CALCULATE THE BEST TIME(S) FOR ALL MEMBERS, WAIT FOR ALL MEMBERS TO SUBMIT RESPONSES.<br>
+</H2>
+
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</p>
+</body>
+</html>

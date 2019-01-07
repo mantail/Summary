@@ -1,0 +1,156 @@
+g++ -g -c test.C -o test.o
+In file included from Contact.h:3:0,
+                 from Book.h:3,
+                 from test.C:1:
+auxillary.h:5:12: warning: ‘sortCriteria’ initialized and declared ‘extern’
+ extern int sortCriteria = LAST_NAME;
+            ^
+In file included from test.C:1:0:
+Book.h: In function ‘int main()’:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:28:53: error: within this context
+  for(vector<Contact>::const_iterator it = testBook->contacts.begin(); it < testBook->contacts.end(); it++)
+                                                     ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:28:86: error: within this context
+  for(vector<Contact>::const_iterator it = testBook->contacts.begin(); it < testBook->contacts.end(); it++)
+                                                                                      ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:32:34: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                  ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:32:88: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                        ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:32:142: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                              ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:32:197: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                                                                                     ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:32:249: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                                                                                                                                         ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:32:302: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                                                                                                                                                                                              ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:32:351: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                                                                                                                                                                                                                                               ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:32:400: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                                                                                                                                                                                                                                                                                                ^
+test.C:32:412: error: ‘class Contact’ has no member named ‘getZipcode’
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:39:53: error: within this context
+  for(vector<Contact>::const_iterator it = testBook->contacts.begin(); it < testBook->contacts.end(); it++)
+                                                     ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:39:86: error: within this context
+  for(vector<Contact>::const_iterator it = testBook->contacts.begin(); it < testBook->contacts.end(); it++)
+                                                                                      ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:43:34: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                  ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:43:88: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                        ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:43:142: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                              ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:43:197: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                                                                                     ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:43:249: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                                                                                                                                         ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:43:302: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                                                                                                                                                                                              ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:43:351: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                                                                                                                                                                                                                                               ^
+In file included from test.C:1:0:
+Book.h:13:23: error: ‘std::vector<Contact> Book::contacts’ is private
+  std::vector<Contact> contacts;
+                       ^
+test.C:43:400: error: within this context
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                                                                                                                                                                                                                                                                                                ^
+test.C:43:412: error: ‘class Contact’ has no member named ‘getZipcode’
+   cerr << "First: " << testBook->contacts[i].getFirstName() << "  Last: " << testBook->contacts[i].getLastName() << "  Phone: " << testBook->contacts[i].getPhoneNumber() << "  Ad1: " << testBook->contacts[i].getAddress1() << "  Ad2: " << testBook->contacts[i].getAddress2() << "  City: " << testBook->contacts[i].getCity() << "  State: "<< testBook->contacts[i].getState() << "  Zip: " << testBook->contacts[i].getZipcode() << endl;
+                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+Makefile:12: recipe for target 'test.o' failed
+make: *** [test.o] Error 1

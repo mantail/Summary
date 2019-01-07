@@ -1,0 +1,27 @@
+#create AddressBook directory and addressBook hidden file
+srcdir=$(pwd)
+mkdir ~/AddressBook
+touch ~/AddressBook/.addressBook
+mkdir ~/AddressBook/src
+echo Book to open:> ~/AddressBook/.addressBook
+echo NULL >> ~/AddressBook/.addressBook
+
+#install fltk in AddressBook directory
+cd ~/AddressBook
+curl -O http://fltk.org/pub/fltk/1.3.4/fltk-1.3.4-source.tar.gz
+tar -xvzf fltk-1.3.4-source.tar.gz
+cd fltk-1.3.4
+touch ../fltkInstallLog
+echo 'Compiling fltk. This may take a few minutes....'
+echo 'For more information on the fltk installation, refer to the fltkInstallLog in the Address Book directory.'
+make > ../fltkInstallLog #compiles fltk libraries
+cd .. #navigates back to AddressBook directory
+
+cd $srcdir
+echo $(pwd)
+cp *.C *.h Makefile ~/AddressBook/src #copy source files to AddressBook
+echo 'Copying source files....'
+cd ~/AddressBook/src
+echo 'Compiling source files....'
+make #compile main application
+cp TeamBGreat ~/Desktop #move compiled application to Desktop

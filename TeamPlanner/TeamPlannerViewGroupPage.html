@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="mystyle.css?v=4">
+<style>
+#calculate_now{
+	width: auto;
+	overflow: right;
+}
+#abort_group{
+	width: auto; 
+}
+#admin_visible{
+	padding-right: 50px;
+	float: right;
+}
+#notice_text{
+	color: black;
+}
+li{
+	color: black;	
+}
+#UI{
+	width: 90%;
+	height 200px;
+	margin: auto;
+	padding: 10px;
+}
+#input_times{
+	width: 55%;
+	height 200px;
+	float: left;
+	padding-bottom: 5%;
+}
+#admin_viewable{
+	margin-left: 55%;
+	height: 200px;
+}
+</style>
+<title>Team Planner Groups</title>
+</head>
+<body>
+<input id='g_id' type='text' readonly='readonly' value='hello' hidden='true'>
+<center>
+<h1 id="g_name">NAME OF GROUP</h1>
+</center>
+<div class="container" align="right">
+	<button id="guideButton" onclick="return toUserGuidePage();">User Guide</button>
+    <button id="backButton" onclick="return toMainPage();">Back to main page</button>
+    <button id="logoutButton" onclick="return logoutUser();">Log Out</button>
+ </div>
+
+<P>
+<H2 id="g_brief">GROUP DESCRIPTION</H2>
+<hr>
+<H2>
+<ul id="member_list">
+	<label>Members of Group:</label><hr>
+</ul>
+</H2>
+<section class="container" id="UI">
+	<div id="input_times" class="container" align="left">
+			<H2 id="notice_text">
+			IMPORTANT:Only input times on intervals of thirty minutes. You may repeat this process with the same day if you have more than five times that work. You may input any day within the assigned date frame.<br>
+			</H2><br>
+			<input type="date" id="date_in" min="1" max="31"><br>
+			<input type="time" id="time1_in" min="09:00" max="20:00" value="09:00"><br>
+			<input type="time" id="time2_in" min="09:00" max="20:00" value="09:00"><br>
+			<input type="time" id="time3_in" min="09:00" max="20:00" value="09:00"><br>
+			<input type="time" id="time4_in" min="09:00" max="20:00" value="09:00"><br>
+			<input type="time" id="time5_in" min="09:00" max="20:00" value="09:00">
+			<button id="submit_times" onclick="return addTimes();">Submit Times</button>
+	</div>
+	<div id="admin_visible"class="container">
+		<input id="startWindow" type="text" readonly="readonly" value="end"><br>
+		<input id="endWindow" type="text" readonly="readonly" value="start"><br>
+		<input id="meeting_len" type="text" readonly="readonly" value="len"><br>
+		<input id="num_members" type="text" readonly="readonly" value="number of members:  X"><br>
+		<input id="num_responses" type="text" readonly="readonly" value="num responses:  Y"><br>
+		<input id="add_key" type="text" readonly="readonly" value="key"><br><br><br>
+		<button id="abort_group">Cancel Group</button><br><br>
+		<button id="calculate_now">Calculate Best Time</button>
+	</div>
+</section>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js" type="application/javascript"> </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./javascript/aux/app.js?v=4" type="application/javascript"> </script>
+<script src="./javascript/aux/auth/AuthChangedViewGroup.js?v=2"> </script>
+<script src="./javascript/aux/Redirects.js?v=5"> </script>
+<script src="./javascript/group/UpdateViewGroup.js?v=2"> </script>
+<script src="./javascript/group/AddTimes.js"> </script>
+<script src="./javascript/group/removeUser.js"> </script>
+<script src="./javascript/user/Logout.js?v=4"></script>
+</body>
+</html>

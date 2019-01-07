@@ -1,0 +1,85 @@
+body{
+	background-image:url("Background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: 'Dosis', sans-serif;
+}
+
+hr{
+	size: 10;
+	border-color: black;
+}
+
+H1{
+    
+	font-size:150%;
+	color: rgb(233, 22, 64);
+	background-color: rgb(255, 255, 255);
+        height: auto;
+	padding: 1px;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 5px;
+}
+
+H2{
+    
+	font-size:150%;
+	color: rgb(233, 22, 64);
+	background-color: rgb(255, 255, 255);
+        height: auto;
+	padding: 1px;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 5px;
+}
+
+label{
+	font-size:120%;
+}
+
+
+p{
+	font-size: 120%;
+	font-weight:bold;
+}
+H2{
+	font-size:120%;
+	font-weight:bold;
+}
+button{
+	width: auto;
+	font-size: 120%;
+	text-align:center;
+	height: 30px;
+    	font-family: 'Dosis', sans-serif;
+	background-color: rgb(255, 255, 255);
+    	color: rgb(233, 22, 64);
+    	border: 2px solid rgb(0, 0, 0);
+    	border-radius: 5px;
+    	-webkit-transition-duration:0.2s;
+    	transition-duration:0.2s;
+}
+
+button:hover{
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+input{
+	width 50%;
+	font-size: 120%;
+	height: 30px;
+	font-family: 'Dosis', sans-serif;
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(233, 22, 64);
+	border-radius: 5px;
+}
+
+input:focus{
+	border: 2px solid rgb(0,0,0);
+}
+pre{
+	font-family: 'Dosis', sans-serif;
+	font-size:120%;
+	font-weight: bolder;
+	height: 30px;
+}

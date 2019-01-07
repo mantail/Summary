@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="mystyle.css?=2">
+<style>
+#result{
+	border: 5px solid white;
+	background: white;
+}
+</style>
+<title>Planner Add Group</title>
+</head>
+<body>
+<center>
+<h1>Add a group</h1>
+</center>
+<div class="container" align="right">
+	<button id="guideButton" onclick="return toUserGuidePage();">User Guide</button>
+     <button id="backButton" onclick="return toMainPage();">Back to main page    </button>
+     <button id="logoutButton" onclick="return logoutUser();">Log Out</button>
+ </div>
+<hr>
+<br>
+<p>
+Please add a group to your list of existing groups by inputing the key that an admin gave you.</p>
+<p>
+<div id="key_section" type="container">
+	<input id="key_in" type="text " name="key" placeholder="Input key here"><br>
+	<button id="key_submit" onclick="return ValidateGroup();">Submit Key</button>
+	<pre id="result">result log</pre>
+</div>
+<br>
+<br>
+<br>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</p>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+<script src="./javascript/aux/app.js?v=4" type="application/javascript"> </script>
+<script src="./javascript/group/AddGroup.js?v=3" type="application/javascript"> </script>
+<script src="./javascript/aux/auth/AuthChangedOther.js?v=2"></script>
+<script src="./javascript/user/Logout.js?v=4"></script>
+<script src="./javascript/aux/Redirects.js?v=5" type="application/javascript"> </script>
+</body>
+</html>
